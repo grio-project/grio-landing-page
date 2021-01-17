@@ -5,14 +5,20 @@ class Cover extends Component {
     return (
       <div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> feat(React): Implements landing page structure
         <ul>
           <li>
             Cover
           </li>
         </ul>
+<<<<<<< HEAD
 =======
         
 >>>>>>> feat(React App): Implements basic app structure
+=======
+>>>>>>> feat(React): Implements landing page structure
       </div>
     );
   }

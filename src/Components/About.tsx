@@ -5,6 +5,7 @@ class About extends Component {
     return (
       <div>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <h1>
         O que é o projeto
         </h1>
@@ -18,6 +19,13 @@ class About extends Component {
 =======
         
 >>>>>>> feat(React App): Implements basic app structure
+=======
+        <ul>
+          <li>
+            About
+          </li>
+        </ul>
+>>>>>>> feat(React): Implements landing page structure
       </div>
     );
   }
