@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import Cover from './Cover';
 import About from './About';
 import Team from './Team';
@@ -15,6 +16,14 @@ class LandingPage extends Component {
         <Forms />
         <NextSteps />
         <Profiles />
+=======
+
+class LandingPage extends Component {
+  render() {
+    return (
+      <div>
+        <p>LandingPage</p>
+>>>>>>> feat(React App): Implements basic app structure
       </div>
     );
   }
