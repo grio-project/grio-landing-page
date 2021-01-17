@@ -8,7 +8,7 @@ import Profiles from './Profiles';
 class LandingPage extends Component {
   render() {
     return (
-      <div>
+      <div className='large-space'>
         <Cover />
         <About />
         <Team />
