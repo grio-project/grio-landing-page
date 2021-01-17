@@ -4,7 +4,11 @@ class NextSteps extends Component {
   render() {
     return (
       <div>
-        
+        <ul>
+          <li>
+            NextSteps
+          </li>
+        </ul>
       </div>
     );
   }

@@ -4,7 +4,11 @@ class Cover extends Component {
   render() {
     return (
       <div>
-        
+        <ul>
+          <li>
+            Cover
+          </li>
+        </ul>
       </div>
     );
   }
