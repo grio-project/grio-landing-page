@@ -4,7 +4,11 @@ class Profiles extends Component {
   render() {
     return (
       <div>
-        
+        <ul>
+          <li>
+            Profiles
+          </li>
+        </ul>
       </div>
     );
   }
