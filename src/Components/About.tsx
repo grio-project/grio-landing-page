@@ -4,8 +4,7 @@ class About extends Component {
   render() {
     return (
       <div>
-<<<<<<< HEAD
-<<<<<<< HEAD
+
         <h1>
         O que é o projeto
         </h1>
@@ -16,16 +15,8 @@ class About extends Component {
         <p>
         O Griô vai ser uma plataforma que vai focada em mentorias entre pessoas negras.
         </p>
-=======
         
->>>>>>> feat(React App): Implements basic app structure
-=======
-        <ul>
-          <li>
-            About
-          </li>
-        </ul>
->>>>>>> feat(React): Implements landing page structure
+
       </div>
     );
   }
