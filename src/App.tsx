@@ -5,18 +5,17 @@ import Footer from './Components/Footer'
 import LandingPage from './Components/LandingPage'
 import { Container } from 'react-bootstrap'
 
-
-
-
 class App extends Component {
   render() {
     return (
       <div className='App'>
-        <Container>       
-          <Header />
-          <LandingPage />
-          <Footer />  
-        </Container>
+              
+        <Header />
+          <Container> 
+            <LandingPage />
+          </Container>
+        <Footer />  
+        
       </div>
     );
   }

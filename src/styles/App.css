@@ -27,17 +27,35 @@
     font-family: 'League Spartan';
 }
 
+.slide {
+    height: 500px;    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    vertical-align: baseline-top;
+    
+}
+
+.title {
+    font-size: 36px;
+    font-family: 'League Spartan';
+    color: #58361d;
+    text-transform: uppercase;
+}
+
 .cover-title {
     font-size: 36px;
     color: #58361d;
     text-align: center;
 }
 
-.slide {
-    height: 600px;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+.footer {
+    text-align: center;
+    padding-bottom: 50px;
+    background-color: #58361d;
+    color: white
+}
+
+.contrast-links a {
+    color: white
 }
