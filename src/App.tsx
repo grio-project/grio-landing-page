@@ -3,7 +3,7 @@ import './styles/App.css';
 import Header from './Components/Header'
 import Footer from './Components/Footer'
 import LandingPage from './Components/LandingPage'
-import { Container, Row } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 
 
 

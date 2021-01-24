@@ -1,34 +1,43 @@
 @font-face {
-  font-family: 'Hussar';
-  src: local('Hussar'), url(../assets/fonts/hussar-ekologiczne-1-maisfontes.b4fe/hussar-ekologiczne-1.otf) format('opentype');
+    font-family: 'Hussar';
+    src: local('Hussar'), url(../assets/fonts/hussar-ekologiczne-1-maisfontes.b4fe/hussar-ekologiczne-1.otf) format('opentype');
 }
 
 @font-face {
-  font-family: 'League Spartan';
-  src: local('League Spartan'), url(../assets/fonts/LeagueSpartan/LeagueSpartan-Bold.otf) format('opentype');
+    font-family: 'League Spartan';
+    src: local('League Spartan'), url(../assets/fonts/LeagueSpartan/LeagueSpartan-Bold.otf) format('opentype');
 }
 
 @font-face {
-  font-family: 'Roboto Condensed Regular';
-  src: local('Roboto Condensed Regular'), url(../assets/fonts/RobotoCondensed/RobotoCondensed-Regular.ttf) format('truetype');
+    font-family: 'Roboto Condensed Regular';
+    src: local('Roboto Condensed Regular'), url(../assets/fonts/RobotoCondensed/RobotoCondensed-Regular.ttf) format('truetype');
 }
 
 .App {
-  color: #150941;
-  background-color: #f1f1f2;
-  font-family: 'Roboto Condensed Regular';
-
-  
+    color: #150941;
+    background-color: #f1f1f2;
+    font-family: 'Roboto Condensed Regular';
 }
 
 .special-font {
-  font-family: 'Hussar';
-  font-size: 60px;
+    font-family: 'Hussar';
 }
 
 .title-font {
-  font-family: 'League Spartan';
-  font-size: 60px;
+    font-family: 'League Spartan';
 }
 
+.cover-title {
+    font-size: 36px;
+    color: #58361d;
+    text-align: center;
+}
 
+.slide {
+    height: 600px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
