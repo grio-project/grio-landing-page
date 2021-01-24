@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+//@ts-ignore
 import { Navbar, Nav} from 'react-bootstrap'
 import GrioLogo from '../assets/logos/LOGOTIPO_GRIÔ_Prancheta 1 (200x45).png'
 
