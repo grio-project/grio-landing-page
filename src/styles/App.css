@@ -28,12 +28,10 @@
 }
 
 .slide {
-    height: 500px;    
+    height: 500px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    vertical-align: baseline-top;
-    
 }
 
 .title {
