@@ -1,59 +1,59 @@
-@font-face {
-    font-family: 'Hussar';
-    src: local('Hussar'), url(../assets/fonts/hussar-ekologiczne-1-maisfontes.b4fe/hussar-ekologiczne-1.otf) format('opentype');
-}
-
-@font-face {
-    font-family: 'League Spartan';
-    src: local('League Spartan'), url(../assets/fonts/LeagueSpartan/LeagueSpartan-Bold.otf) format('opentype');
-}
-
-@font-face {
-    font-family: 'Roboto Condensed Regular';
-    src: local('Roboto Condensed Regular'), url(../assets/fonts/RobotoCondensed/RobotoCondensed-Regular.ttf) format('truetype');
-}
-
-.App {
-    color: #150941;
-    background-color: #f1f1f2;
-    font-family: 'Roboto Condensed Regular';
-}
-
-.special-font {
-    font-family: 'Hussar';
-}
-
-.title-font {
-    font-family: 'League Spartan';
-}
-
-.slide {
-    height: 500px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.title {
-    font-size: 36px;
-    font-family: 'League Spartan';
-    color: #58361d;
-    text-transform: uppercase;
-}
-
-.cover-title {
-    font-size: 36px;
-    color: #58361d;
-    text-align: center;
-}
-
-.footer {
-    text-align: center;
-    padding-bottom: 50px;
-    background-color: #58361d;
-    color: white
-}
-
-.contrast-links a {
-    color: white
-}
+                                @font-face {
+                                    font-family: 'Hussar';
+                                    src: local('Hussar'), url(../assets/fonts/hussar-ekologiczne-1-maisfontes.b4fe/hussar-ekologiczne-1.otf) format('opentype');
+                                }
+                                
+                                @font-face {
+                                    font-family: 'League Spartan';
+                                    src: local('League Spartan'), url(../assets/fonts/LeagueSpartan/LeagueSpartan-Bold.otf) format('opentype');
+                                }
+                                
+                                @font-face {
+                                    font-family: 'Roboto Condensed Regular';
+                                    src: local('Roboto Condensed Regular'), url(../assets/fonts/RobotoCondensed/RobotoCondensed-Regular.ttf) format('truetype');
+                                }
+                                
+                                .App {
+                                    color: #150941;
+                                    background-color: #f1f1f2;
+                                    font-family: 'Roboto Condensed Regular';
+                                }
+                                
+                                .special-font {
+                                    font-family: 'Hussar';
+                                }
+                                
+                                .title-font {
+                                    font-family: 'League Spartan';
+                                }
+                                
+                                .std-slide {
+                                    height: 500px;
+                                    display: flex;
+                                    flex-direction: row;
+                                    flex-wrap: wrap;
+                                }
+                                
+                                .title {
+                                    font-size: 36px;
+                                    font-family: 'League Spartan';
+                                    color: #58361d;
+                                    text-transform: uppercase;
+                                }
+                                
+                                .cover-title {
+                                    font-size: 36px;
+                                    color: #58361d;
+                                    text-align: center;
+                                }
+                                
+                                .footer {
+                                    text-align: center;
+                                    padding-bottom: 50px;
+                                    background-color: #58361d;
+                                    color: white
+                                }
+                                
+                                .contrast-links a {
+                                    color: white
+                                }

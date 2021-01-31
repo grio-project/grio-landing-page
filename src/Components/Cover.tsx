@@ -5,7 +5,7 @@ import GrioLogo from '../assets/logos/LOGOTIPO_GRIOÌ__Prancheta 1_600x600-cropp
 class Cover extends Component {
   render() {
     return (
-      <div className="slide">
+      <div className="std-slide">
         <Row>
 
         <Col xs={7}>

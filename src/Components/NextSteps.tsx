@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class NextSteps extends Component {
   render() {
     return (
-      <div className='slide'>
+      <div className='std-slide'>
         
         <div>
           <h1 className='title'>
