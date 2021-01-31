@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 import nana_foto from "../assets/photos/nana.png";
 import laion_foto from "../assets/photos/laion.png";
 import marcelo_foto from "../assets/photos/marcelo.png";
@@ -7,7 +7,7 @@ import marcelo_foto from "../assets/photos/marcelo.png";
 class Team extends Component {
   render() {
     return (
-      <div>
+      <Container >
         <div>
           <h1 className="title">
             QUEM ESTÁ ENVOLVIDO?
@@ -16,7 +16,7 @@ class Team extends Component {
         <div>
           <Row className="std-slide">
 
-            <Col xs={4} >
+            <Col xs={4} sm={8} >
               <p>
                 {<img src={nana_foto} />}
                 <h3>Nana da Silva</h3>
@@ -27,7 +27,7 @@ class Team extends Component {
                   </p>
               </p>
             </Col>
-            <Col xs={4}>
+            <Col xs={4} sm={8}>
               <p>
 
                 {<img src={laion_foto} />}
@@ -42,7 +42,7 @@ class Team extends Component {
                 </p>
               </p>
             </Col>
-            <Col xs={4}>
+            <Col xs={4} sm={8}>
               <p>
                 {<img src={marcelo_foto} />}
                 <h3>Marcelo Prado</h3>
@@ -58,7 +58,7 @@ class Team extends Component {
           </Row>
         </div>
 
-      </div>
+      </Container>
     );
   }
 }

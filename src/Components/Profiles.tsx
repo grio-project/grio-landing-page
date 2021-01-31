@@ -18,14 +18,14 @@ class Profiles extends Component {
 
             <Col xs={4} >
               <p>
-                {<img src={instagram_logo} />}
+                {<a href='https://www.instagram.com/iniciativagrio/'><img src={instagram_logo} /></a>}
 
               </p>
             </Col>
             <Col xs={4}>
               <p>
 
-                {<img src={twitter_logo} />}
+                {<a href='https://twitter.com/iniciativaGrio'><img src={twitter_logo} /></a>}
 
               </p>
 
@@ -34,7 +34,7 @@ class Profiles extends Component {
             </Col>
         <Col xs={4}>
           <p>
-            {<img src={linkedin_logo} />}
+            {<a href='https://www.linkedin.com/company/grio-plataforma-de-mentorias/about/?viewAsMember=true'><img src={linkedin_logo} /></a>}
 
           </p>
                 
