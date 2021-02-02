@@ -16,13 +16,13 @@ class Profiles extends Component {
         <div>
           <Row className="std-slide">
 
-            <Col xs={4} >
+            <Col  >
               <p>
                 {<a href='https://www.instagram.com/iniciativagrio/'><img src={instagram_logo} /></a>}
 
               </p>
             </Col>
-            <Col xs={4}>
+            <Col >
               <p>
 
                 {<a href='https://twitter.com/iniciativaGrio'><img src={twitter_logo} /></a>}
@@ -32,7 +32,7 @@ class Profiles extends Component {
               
               
             </Col>
-        <Col xs={4}>
+        <Col >
           <p>
             {<a href='https://www.linkedin.com/company/grio-plataforma-de-mentorias/about/?viewAsMember=true'><img src={linkedin_logo} /></a>}
 

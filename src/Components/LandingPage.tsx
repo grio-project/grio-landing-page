@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Container } from 'react-bootstrap';
+
 import Cover from './Cover';
 import About from './About';
 import Team from './Team';
@@ -8,14 +10,14 @@ import Profiles from './Profiles';
 class LandingPage extends Component {
   render() {
     return (
-      <div className='large-space'>
+      <Container fluid>
         <Cover />
         <About />
         <Team />
         <Forms />
         <NextSteps />
         <Profiles />
-      </div>
+      </Container>
     );
   }
 }

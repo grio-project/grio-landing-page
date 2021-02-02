@@ -7,7 +7,7 @@ import marcelo_foto from "../assets/photos/marcelo.png";
 class Team extends Component {
   render() {
     return (
-      <Container >
+      <Container fluid >
         <div>
           <h1 className="title">
             QUEM ESTÁ ENVOLVIDO?
@@ -16,7 +16,7 @@ class Team extends Component {
         <div>
           <Row className="std-slide">
 
-            <Col xs={4} sm={8} >
+            <Col   >
               <p>
                 {<img src={nana_foto} />}
                 <h3>Nana da Silva</h3>
@@ -27,7 +27,7 @@ class Team extends Component {
                   </p>
               </p>
             </Col>
-            <Col xs={4} sm={8}>
+            <Col >
               <p>
 
                 {<img src={laion_foto} />}
@@ -42,7 +42,7 @@ class Team extends Component {
                 </p>
               </p>
             </Col>
-            <Col xs={4} sm={8}>
+            <Col  >
               <p>
                 {<img src={marcelo_foto} />}
                 <h3>Marcelo Prado</h3>
