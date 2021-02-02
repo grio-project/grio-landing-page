@@ -14,7 +14,7 @@ class Profiles extends Component {
         </h1>
         </div>
         <div>
-          <Row className="std-slide">
+          <Row className="std-slide profile-columns">
 
             <Col  >
               <p>

@@ -7,45 +7,48 @@ import marcelo_foto from "../assets/photos/marcelo.png";
 class Team extends Component {
   render() {
     return (
-      <Container fluid >
+  
         <div>
           <h1 className="title">
             QUEM ESTÁ ENVOLVIDO?
-        </h1>
-        </div>
-        <div>
-          <Row className="std-slide">
+          </h1>
+   
+          <Row className="std-slide team-columns">
 
-            <Col   >
+            <Col >
               <p>
                 {<img src={nana_foto} />}
-                <h3>Nana da Silva</h3>
+                <p className='subtitle-font'>
+                  Nana da Silva
+                </p>
                 <p>
                   Idealizadora do projeto e pessoa desenvolvedora
+                </p>
+                <p>
                   @shebangbash
                   natr@hey.com
-                  </p>
+                </p>
               </p>
-            </Col>
+          </Col>
+          
             <Col >
               <p>
 
                 {<img src={laion_foto} />}
-                <h3>Laion Azeredo</h3>
+                <p className='subtitle-font'>Laion Azeredo</p>
                 <p>
                 Desenvolvedor Full Stack
                 <p>
                 @laionazeredo
                 </p>
-
-                
                 </p>
               </p>
-            </Col>
-            <Col  >
+          </Col>
+          
+            <Col >
               <p>
                 {<img src={marcelo_foto} />}
-                <h3>Marcelo Prado</h3>
+                <p className='subtitle-font'>Marcelo Prado</p>
                 <p>
                 Desenvolvedor Full Stack
                 <p>
@@ -54,11 +57,13 @@ class Team extends Component {
                 
                 </p>
               </p>
-            </Col>
+          </Col>
+          
           </Row>
+        
         </div>
 
-      </Container>
+      
     );
   }
 }

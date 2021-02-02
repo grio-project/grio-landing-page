@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Container } from 'react-bootstrap';
 
-import Cover from './Cover';
 import About from './About';
 import Team from './Team';
 import Forms from './Forms';
@@ -11,7 +10,6 @@ class LandingPage extends Component {
   render() {
     return (
       <Container fluid>
-        <Cover />
         <About />
         <Team />
         <Forms />

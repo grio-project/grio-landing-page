@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
-import GrioLogo from '../assets/logos/LOGOTIPO_GRIOÌ__Prancheta 1_600x600-cropped.png';
+import GrioLogo from '../assets/logos/logo_grio_square_color.resized.png';
 
 class Cover extends Component {
   render() {
     return (
-      <div className="std-slide ">
-        <Container fluid>
-
+      <div className="cover-image">
+        <Container className='cover'>
           <Row>
-
-          <Col xs={8} >
+          <Col  >
             <p>
               <img src={GrioLogo}/>
             </p>
