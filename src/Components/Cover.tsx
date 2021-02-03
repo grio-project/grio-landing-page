@@ -10,7 +10,7 @@ class Cover extends Component {
           <Row>
           <Col  >
             <p>
-              <img src={GrioLogo}/>
+              <img src={GrioLogo} alt="Grio Logo"/>
             </p>
           </Col>
           <Col >

@@ -17,7 +17,7 @@ class Team extends Component {
 
             <Col >
               <p>
-                {<img src={nana_foto} />}
+                {<img src={nana_foto} alt="Nana's profile" />}
                 <p className='subtitle-font'>
                   Nana da Silva
                 </p>
@@ -34,7 +34,7 @@ class Team extends Component {
             <Col >
               <p>
 
-                {<img src={laion_foto} />}
+                {<img src={laion_foto} alt="Laion's profile" />}
                 <p className='subtitle-font'>Laion Azeredo</p>
                 <p>
                 Desenvolvedor Full Stack
@@ -47,7 +47,7 @@ class Team extends Component {
           
             <Col >
               <p>
-                {<img src={marcelo_foto} />}
+                {<img src={marcelo_foto} alt="Marcelo's profile" />}
                 <p className='subtitle-font'>Marcelo Prado</p>
                 <p>
                 Desenvolvedor Full Stack
