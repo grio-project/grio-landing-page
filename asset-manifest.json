@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/grio-landing-page/static/css/main.a434861c.chunk.css",
+    "main.js": "/grio-landing-page/static/js/main.336069d5.chunk.js",
+    "main.js.map": "/grio-landing-page/static/js/main.336069d5.chunk.js.map",
+    "runtime-main.js": "/grio-landing-page/static/js/runtime-main.12d9f058.js",
+    "runtime-main.js.map": "/grio-landing-page/static/js/runtime-main.12d9f058.js.map",
+    "static/js/2.6c6f3e6f.chunk.js": "/grio-landing-page/static/js/2.6c6f3e6f.chunk.js",
+    "static/js/2.6c6f3e6f.chunk.js.map": "/grio-landing-page/static/js/2.6c6f3e6f.chunk.js.map",
+    "static/js/3.d5687dbb.chunk.js": "/grio-landing-page/static/js/3.d5687dbb.chunk.js",
+    "static/js/3.d5687dbb.chunk.js.map": "/grio-landing-page/static/js/3.d5687dbb.chunk.js.map",
+    "index.html": "/grio-landing-page/index.html",
+    "static/css/main.a434861c.chunk.css.map": "/grio-landing-page/static/css/main.a434861c.chunk.css.map",
+    "static/js/2.6c6f3e6f.chunk.js.LICENSE.txt": "/grio-landing-page/static/js/2.6c6f3e6f.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/grio-landing-page/static/media/taylor-grote-UiVe5QvOhao-unsplash.03991cf4.jpg",
+    "static/media/instagram.c17c17f1.png": "/grio-landing-page/static/media/instagram.c17c17f1.png",
+    "static/media/laion.ef6ce199.png": "/grio-landing-page/static/media/laion.ef6ce199.png",
+    "static/media/logo_grio_square_color.resized.3f049d8b.png": "/grio-landing-page/static/media/logo_grio_square_color.resized.3f049d8b.png",
+    "static/media/marcelo.800bd90c.png": "/grio-landing-page/static/media/marcelo.800bd90c.png",
+    "static/media/nana.e6b14fb5.png": "/grio-landing-page/static/media/nana.e6b14fb5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.12d9f058.js",
+    "static/js/2.6c6f3e6f.chunk.js",
+    "static/css/main.a434861c.chunk.css",
+    "static/js/main.336069d5.chunk.js"
+  ]
+}
