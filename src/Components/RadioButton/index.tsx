@@ -3,6 +3,7 @@ import { RadioButtonContainer } from './style'
 
 type Props = {
   valueButton: string
+  label:string
 }
 
 export default function RadioButton(props: Props) {
@@ -21,6 +22,7 @@ export default function RadioButton(props: Props) {
             onChange={handleValue}
             value={props.valueButton}
          />
+         <label>{props.label}</label>
     </RadioButtonContainer>
   )
 }

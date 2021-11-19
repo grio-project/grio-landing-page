@@ -1,11 +1,8 @@
 import styled from 'styled-components';
 
-export const SimpleInputContainer = styled.div`
-     
-      
-      
-      width: 100%;
-      height: 38px;
+export const ButtonsContainer = styled.div`
+    
+    
       color: $gray_dark1;
       margin: 0;
   
