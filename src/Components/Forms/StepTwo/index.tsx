@@ -24,14 +24,14 @@ export default function StepTwo(props: Props){
           <StepTwoContenair>
               <label>Dentro da sua area de mentoria, escolha os tópicos você gostaria de ensinar?</label>    
               <StepTags>
-                <Buttons className={""} handleClick={props.navigation.previous} label={"UX Design"} />
-                <Buttons className={""} handleClick={props.navigation.previous} label={"UX Research"} /> 
-                <Buttons className={"tag"} handleClick={props.navigation.previous} label={"UI Design"} />
                 <Buttons className={"tag"} handleClick={props.navigation.previous} label={"UX Design"} />
                 <Buttons className={"tag"} handleClick={props.navigation.previous} label={"UX Research"} /> 
                 <Buttons className={"tag"} handleClick={props.navigation.previous} label={"UI Design"} />
                 <Buttons className={"tag"} handleClick={props.navigation.previous} label={"UX Design"} />
                 <Buttons className={"tag"} handleClick={props.navigation.previous} label={"UX Research"} /> 
+                <Buttons className={"tag"} handleClick={props.navigation.previous} label={"UI Design"} />
+                <Buttons className={"tag"} handleClick={props.navigation.previous} label={"UX Design"} />
+                <Buttons className={"tag"} handleClick={props.navigation.previous} label={"UX Research_for_designers"} /> 
                 <Buttons className={"tag"} handleClick={props.navigation.previous} label={"UI Design"} />
               </StepTags>
               <StepTwoAction>

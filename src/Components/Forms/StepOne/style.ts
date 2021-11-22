@@ -40,7 +40,7 @@ export const StepOneActions = styled.div`
       border: 1px solid #606C36;
   
     }
-  }
+  
 
 `;
 
