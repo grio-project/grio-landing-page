@@ -32,7 +32,7 @@ export default function StepTwo(props: Props){
                 <Buttons className={"tag"} handleClick={props.navigation.previous} label={"UI Design"} />
                 <Buttons className={"tag"} handleClick={props.navigation.previous} label={"UX Design"} />
                 <Buttons className={"tag"} handleClick={props.navigation.previous} label={"UX Research_for_designers"} /> 
-                <Buttons className={"tag"} handleClick={props.navigation.previous} label={"UI Design"} />
+                <Buttons className={"tag"} handleClick={props.navigation.previous} label={"UI/UX"} />
               </StepTags>
               <StepTwoAction>
                  
