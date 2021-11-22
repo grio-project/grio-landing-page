@@ -2,40 +2,24 @@ import styled from 'styled-components';
 
 export const StepTwoContenair = styled.div`
      
-     
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 32px;
+  align-items: center;
+  padding: 24px;
+  color: #666666;
 
-  
-  width: 548px;
-  height: 520px;
-  left: 366px;
-  top: 144px;
+  width: 100%;
+  height: 110%;
+
 
   background: #FFFFFF;
-  border: 1px solid #DDDDDD;
   box-sizing: border-box;
   border-radius: 8px;
-
-
-  
-  text-align: center;
-  
-      &::placeholder {
-        font-size: 14px;
-        color: #a7b0be;
-      }
-  
-      &:-webkit-autofill {
-        box-shadow: 0 0 0 30px white inset;
-      }
 `;
 export const StepTwoAction = styled.div`
 
 display: flex;
-  width: 100%;
+  width: 244px;
   justify-content: space-around;
   align-items: center;
   margin-top: 24px;
@@ -43,6 +27,15 @@ display: flex;
   button{
     width: 230px;
     height: 48px;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+  .next{
+    color: #606C36;
+    border-radius: 8px;
+    margin:10px;
+    border: 1px solid #606C36;
+
   }
 
 `

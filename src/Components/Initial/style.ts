@@ -8,9 +8,9 @@ align-items: center;
 padding: 32px;
 color: #666666;
 position: relative;
-width: 748px;
+width: 100%;
 height: 576px;
-
+font: Mulish;
 
 background: #FFFFFF;
 border: 1px solid #DDDDDD;

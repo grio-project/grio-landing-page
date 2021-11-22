@@ -3,8 +3,9 @@ import styled from 'styled-components';
 export const ButtonsContainer = styled.div`
     
     
-      color: $gray_dark1;
+      color: #66666;
       margin: 0;
+      font: Mulish;
   
       &::placeholder {
         font-size: 14px;

@@ -59,8 +59,8 @@ export default function StepOne(props: Props){
                      
                              
                     <StepOneActions> 
-                        <Buttons handleClick={props.navigation.previous} label={"Voltar"} /> 
-                        <Buttons handleClick={props.navigation.next} label={"Próximo"} /> 
+                        <Buttons className={"next"} handleClick={props.navigation.previous} label={"Voltar"} /> 
+                        <Buttons className={"btn btn-warning"} handleClick={props.navigation.next} label={"Próximo"} /> 
                     </StepOneActions> 
                 </StepOneForm> 
             </StepOneContenair> 

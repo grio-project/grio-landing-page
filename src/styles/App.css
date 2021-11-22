@@ -74,15 +74,7 @@ img {
     text-align: center;
 }
 
-.cover-image {
-    background-image: linear-gradient(
-        to bottom,
-         rgba(88,54,29,0.5) 0%, 
-         rgba(180,144,117,0.5) 35%,
-         rgba(241,241,242,0.5) 100%), 
-         url("../assets/photos/taylor-grote-UiVe5QvOhao-unsplash.jpg")
-         ; /*source: https://unsplash.com/photos/UiVe5QvOhao*/
-}
+
 
 .profile-columns img {
     max-width: 50%;

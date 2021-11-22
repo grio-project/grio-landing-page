@@ -4,13 +4,13 @@ import Buttons from '../../Buttons';
 export const StepOneContenair = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 32px;
+    color: #666666;
 
-    width: 600px;
+    width: 100%;
     height: 100%;
-    left: 366px;
-    top: 144px;
+
 
     background: #FFFFFF;
     border: 1px solid #DDDDDD;
@@ -30,6 +30,16 @@ export const StepOneActions = styled.div`
   button{
     width: 230px;
     height: 48px;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+  .next{
+      color: #606C36;
+      border-radius: 8px;
+      margin:10px;
+      border: 1px solid #606C36;
+  
+    }
   }
 
 `;
