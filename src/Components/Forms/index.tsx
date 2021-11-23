@@ -37,6 +37,13 @@ export default function Forms() {
         initialStep: 0
     })
 
+    // const updateFormDataField = (field: any, value: any) => {
+    //     setFormData(prevState => ({
+    //       ...prevState,
+    //       [field]: value,
+    //     }))
+    //   }
+
     const props = { formData, setFormData, navigation }
 
     switch (step.id) {

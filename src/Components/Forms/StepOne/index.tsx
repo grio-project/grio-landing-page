@@ -30,8 +30,6 @@ export default function StepOne(props: Props){
                     <label>Qual seu melhor email?</label> 
                     <SimpleInput placeholder={"Placeholder"} name={"email"} /> 
                      
-                    <label>Crie uma senha</label> 
-                    <SimpleInput placeholder={"Placeholder"} name={"senha"} /> 
                  
                     <label>Qual tema você quer mentorar ?</label> 
                     <SelectInput placeholder={"Placeholder"} valueSelect={"Não sei o que escrever"} /> 
@@ -39,11 +37,7 @@ export default function StepOne(props: Props){
                     <label>Quais niveis você quer mentorar ?</label> 
                     <SelectInput placeholder={"Placeholder"} valueSelect={"Não sei o que escrever"} /> 
  
-                    <label>Qual seu estado ?</label> 
-                    <SelectInput placeholder={"Placeholder"} valueSelect={"Não sei o que escrever"} /> 
- 
-                    <label>Qual sua cidade?</label> 
-                    <SelectInput placeholder={"Placeholder"} valueSelect={"Não sei o que escrever"} /> 
+            
  
                     <label>Qual gênero você se identifica ?</label> 
                     <SelectInput placeholder={"Placeholder"} valueSelect={"Não sei o que escrever"} /> 

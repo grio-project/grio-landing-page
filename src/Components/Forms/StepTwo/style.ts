@@ -20,18 +20,17 @@ export const StepTwoContenair = styled.div`
 export const StepTwoAction = styled.div`
 
   display: flex;
-  width: 244px;
-
+  width: 100%;
   margin-top: 24px;
   
 
-  justify-content: space-around;
+  justify-content: center;
   button{
     width: 230px;
     height: 48px;
     box-sizing: border-box;
     border-radius: 8px;
-    
+    margin:20px;
   }
   .next{
     color: #606C36;

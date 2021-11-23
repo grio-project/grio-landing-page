@@ -3,7 +3,7 @@ import { SimpleInputContainer } from './style'
 
 type Props = {
   placeholder: string,
-  name: string
+  name: string,
 }
 
 export default function SimpleInput(props: Props) {
