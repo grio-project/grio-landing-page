@@ -25,4 +25,15 @@ button{
     margin:10px;
 
   }
+  @media(max-width:760px){
+    button{
+      width: 100%;
+      font:16px;
+      height: 48px;
+      background: #FFC727;
+      border-radius: 8px;
+      margin:10px;
+  
+    }
+  }
 `;

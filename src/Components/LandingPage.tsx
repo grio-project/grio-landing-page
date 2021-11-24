@@ -6,6 +6,7 @@ import Team from './Team';
 import Forms from './Forms'
 import NextSteps from './NextSteps';
 import Profiles from './Profiles';
+import Step from './Steps'
 class LandingPage extends Component {
   render() {
     return (

@@ -1,17 +1,15 @@
 import styled from 'styled-components';
 
 export const StepTwoContenair = styled.div`
-     
+  width: 100%;
+  height: 100%;  
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 32px;
   color: #666666;
+  
 
-  width: 100%;
-  height: 100%;
-  left: 366px;
-  top: 144px;
 
   background: #FFFFFF;
   box-sizing: border-box;
@@ -38,15 +36,29 @@ export const StepTwoAction = styled.div`
     border: 1px solid #606C36;
 
   }
+  @media(max-width:760px){
+    button{
+      width: 130px;
+      height: 48px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      margin:20px;
+    }
+  }
 
 `;
+export const StepLabel =  styled.div`
+  margin-top: 50px;
+
+`
 export const StepTags =  styled.div
     `
     display: flex;
-    width: 548px;
+    width: 50%;
     height: auto;
     flex-wrap: wrap;
     padding:6px;
+   
   
  
     

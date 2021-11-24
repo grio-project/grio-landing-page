@@ -23,7 +23,7 @@ export default function Initial(props: Props) {
             <p>Griô é um espaço Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
             <div>
                 <Buttons className={"btn btn-warning"} label={"Quero mentorar"} handleClick={props.navigation.next} />
-                <Buttons className={"btn btn-warning"} label={"Quero ser mentorade"} handleClick={handleMentee} />
+                <Buttons className={"btn btn-warning"} label={"Quero ser mentorade"} handleClick={props.navigation.next} />
             </div>
         </InitialContainer>
     )

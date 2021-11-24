@@ -7,6 +7,7 @@ export const StepOneContenair = styled.div`
     align-items: center;
     padding: 32px;
     color: #666666;
+  
 
     width: 100%;
     height: 100%;
@@ -40,12 +41,27 @@ export const StepOneActions = styled.div`
       border: 1px solid #606C36;
   
     }
+    @media(max-width:760px){
+      button{
+        width: 130px;
+        height: 48px;
+        size:16px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        margin:20px;
+      }
+    }
+  }
   
 
 `;
 
 export const StepOneForm = styled.form`
-width: 548px;
+width: 50%;
+margin-top:50px;
+span{
+  width:200px;
+}
 `;
 
 

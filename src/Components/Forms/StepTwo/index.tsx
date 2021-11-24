@@ -3,7 +3,9 @@ import Buttons from '../../Buttons'
 import RadioButton from '../../RadioButton'
 import SelectInput from '../../SelectInput'
 import SimpleInput from '../../SimpleInput'
-import { StepTwoContenair, StepTwoAction, StepTags} from './style'
+import { StepTwoContenair, StepTwoAction, StepTags, StepLabel} from './style'
+import Step from '../../Steps'
+import Icon from '../../../assets/photos/icon.svg'
 
 type Props = {
   formData:any,   
@@ -21,18 +23,22 @@ export default function StepTwo(props: Props){
       }
     return(
         <>
+         
           <StepTwoContenair>
-              <label>Dentro da sua area de mentoria, escolha os tópicos você gostaria de ensinar?</label>    
+              <Step labelOne="1" labelTwo="2" />
+                <StepLabel>
+                   <label>Dentro da sua area de mentoria, escolha os tópicos você gostaria de ensinar?</label>    
+                </StepLabel>
               <StepTags>
-                <Buttons className={"tag"} handleClick={props.navigation.previous} label={"UX Design"} />
-                <Buttons className={"tag"} handleClick={props.navigation.previous} label={"UX Research"} /> 
-                <Buttons className={"tag"} handleClick={props.navigation.previous} label={"UI Design"} />
-                <Buttons className={"tag"} handleClick={props.navigation.previous} label={"UX Design"} />
-                <Buttons className={"tag"} handleClick={props.navigation.previous} label={"UX Research"} /> 
-                <Buttons className={"tag"} handleClick={props.navigation.previous} label={"UI Design"} />
-                <Buttons className={"tag"} handleClick={props.navigation.previous} label={"UX Design"} />
-                <Buttons className={"tag"} handleClick={props.navigation.previous} label={"UX Research_for_designers"} /> 
-                <Buttons className={"tag"} handleClick={props.navigation.previous} label={"UI/UX"} />
+                <Buttons className={"tag"} handleClick={handleClick} label={"UX Design"} />
+                <Buttons className={"tag"} handleClick={handleClick} label={"UX Research"} /> 
+                <Buttons className={"tag"} handleClick={handleClick} label={"UI Design"} />
+                <Buttons className={"tag"} handleClick={handleClick} label={"UX Design"} />
+                <Buttons className={"tag"} handleClick={handleClick} label={"UX Research"} /> 
+                <Buttons className={"tag"} handleClick={handleClick} label={"UI Design"} />
+                <Buttons className={"tag"} handleClick={handleClick} label={"UX Design"} />
+                <Buttons className={"tag"} handleClick={handleClick} label={"UX Research_for_designers"} /> 
+                <Buttons className={"tag"} handleClick={handleClick} label={"UI/UX"} />
               </StepTags>
               <StepTwoAction>
                  
