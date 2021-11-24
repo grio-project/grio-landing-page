@@ -29,6 +29,7 @@ const steps = [
     { id: "initial" },
     { id: "aboutYou" },
     { id: "aboutYourMentoring" },
+    { id: "sendData" },
 ];
 
 export default function Forms() {
@@ -53,6 +54,8 @@ export default function Forms() {
             return <StepOne {...props} />;
         case "aboutYourMentoring":
             return <StepTwo {...props} />;
+        case "sendData":
+            return <MailChecked {...props} />;
     }
 
     return(
