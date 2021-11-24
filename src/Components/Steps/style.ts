@@ -33,13 +33,34 @@ export const StepSpan = styled.div`
 `
 ;
 export const StepLine = styled.p`
-    width: 300px;
+    width: 150px;
     border: 1px solid #D6D7DA;
     margin-top: 3%;
 
-    @media(max-width: 982px){
+    @media(max-width: 982px ){
     width: 80px;
     border: 1px solid #D6D7DA;
     margin-top: 3%;
     }
+    @media(max-width: 770px){
+    width: 50px;
+    border: 1px solid #D6D7DA;
+    margin-top: 3%;
+    }
+    @media(max-width: 600px){
+        width: 45px;
+        border: 1px solid #D6D7DA;
+        margin-top: 1%;
+        }
+    @media(max-width: 530px){
+        width: 30px;
+        border: 1px solid #D6D7DA;
+        margin-top: 1%;
+        }
+    
+        @media(max-width: 479px){
+            width: 20px;
+            border: 1px solid #D6D7DA;
+            margin-top: 1%;
+            }
 `;

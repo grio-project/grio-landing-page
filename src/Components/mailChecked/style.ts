@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const MailCheckedContainer = styled.div`
+export const MailCheckedContainer  = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: center;

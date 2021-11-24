@@ -22,7 +22,7 @@ export default function StepOne(props: Props) {
     return (
         <>
             <StepOneContenair >
-                <Step labelOne="1" labelTwo="2" />
+                <Step labelOne="1" labelTwo="2" labelThree ="3"/>
                 <StepOneForm>
 
                     <label>Qual seu nome?</label>
@@ -33,7 +33,7 @@ export default function StepOne(props: Props) {
                     <SimpleInput placeholder={"Placeholder"} name={"email"} />
 
                     <label>Qual gênero você se identifica ?</label>
-                    <SelectInput placeholder={"Placeholder"} valueSelect={"genero"} />
+                    <SimpleInput placeholder={"Placeholder"} name={"genero"} />
 
                     <label>Conte um pouco mais sobre você:</label>
                     <SimpleInput placeholder={"Placeholder"} name={"voce"} />
