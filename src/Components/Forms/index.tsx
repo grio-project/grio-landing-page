@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useStep } from 'react-hooks-helper'
 import Initial from '../Initial';
+import Step from '../Step';
 import StepOne from './StepOne'
 import StepTwo from './StepTwo'
 
@@ -45,7 +46,6 @@ export default function Forms() {
     //   }
 
     const props = { formData, setFormData, navigation }
-
     switch (step.id) {
         case "aboutYou":
             return <Initial  {...props}/>;
@@ -58,6 +58,7 @@ export default function Forms() {
     return(
         <>
         Steps
+        <Step/>
         </>
     )
 }

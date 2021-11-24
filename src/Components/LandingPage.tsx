@@ -13,6 +13,7 @@ class LandingPage extends Component {
       <Container fluid>
         
         <Forms />
+        <Step/>
         
       </Container>
     );
