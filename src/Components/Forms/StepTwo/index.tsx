@@ -43,7 +43,7 @@ export default function StepTwo(props: Props){
               <StepTwoAction>
                  
                   <Buttons className={"next"} handleClick={props.navigation.previous} label={"Voltar"} /> 
-                  <Buttons className={"btn btn-warning"} handleClick={props.navigation.next} label={"Próximo"} /> 
+                  <Buttons className={"btn btn-warning"} handleClick={props.navigation.next} label={"Finalizar"} /> 
                   
               </StepTwoAction>
           </StepTwoContenair>

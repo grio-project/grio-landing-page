@@ -6,7 +6,7 @@ import Team from './Team';
 import Forms from './Forms'
 import NextSteps from './NextSteps';
 import Profiles from './Profiles';
-import MailChecked from './MailChecked';
+
 
 class LandingPage extends Component {
   render() {
@@ -14,7 +14,7 @@ class LandingPage extends Component {
       <Container fluid>
         
         <Forms />
-        <MailChecked />
+
         
       </Container>
     );

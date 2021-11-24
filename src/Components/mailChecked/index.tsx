@@ -2,8 +2,12 @@ import React from 'react'
 import { ReactComponent as Checked } from '../../assets/photos/pana.svg'
 import { MailCheckedContainer } from './style'
 
+type Props = {
+    navigation: any,
+  
+  }
 
-export default function MailChecked() {
+export default function MailChecked(props: Props) {
 
     const handleMentee = () => {
         return ""
