@@ -1,6 +1,6 @@
 import React from 'react'
 import { ReactComponent as Checked } from '../../assets/photos/pana.svg'
-import { MailCheckedContainer } from './style'
+import {MailCheckedContainer} from './style'
 
 
 export default function MailChecked() {

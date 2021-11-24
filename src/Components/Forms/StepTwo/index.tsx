@@ -25,7 +25,7 @@ export default function StepTwo(props: Props){
         <>
          
           <StepTwoContenair>
-              <Step labelOne="1" labelTwo="2" />
+              <Step labelOne="1" labelTwo="2" labelThree="3" />
                 <StepLabel>
                    <label>Dentro da sua area de mentoria, escolha os tópicos você gostaria de ensinar?</label>    
                 </StepLabel>
@@ -43,7 +43,7 @@ export default function StepTwo(props: Props){
               <StepTwoAction>
                  
                   <Buttons className={"next"} handleClick={props.navigation.previous} label={"Voltar"} /> 
-                  <Buttons className={"btn btn-warning"} handleClick={props.navigation.next} label={"Próximo"} /> 
+                  <Buttons className={"btn btn-warning"} handleClick={props.navigation.next} label={"Finalizar"} /> 
                   
               </StepTwoAction>
           </StepTwoContenair>

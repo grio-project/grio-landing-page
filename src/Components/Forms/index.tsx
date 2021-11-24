@@ -26,8 +26,8 @@ interface useStepType {
 }
 
 const steps = [
+    { id: "initial" },
     { id: "aboutYou" },
-    { id: "aboutYou2" },
     { id: "aboutYourMentoring" },
 ];
 
@@ -47,9 +47,9 @@ export default function Forms() {
 
     const props = { formData, setFormData, navigation }
     switch (step.id) {
-        case "aboutYou":
+        case "initial":
             return <Initial  {...props}/>;
-        case "aboutYou2":
+        case "aboutYou":
             return <StepOne {...props} />;
         case "aboutYourMentoring":
             return <StepTwo {...props} />;
