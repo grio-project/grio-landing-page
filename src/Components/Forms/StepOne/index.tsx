@@ -39,9 +39,9 @@ export default function StepOne(props: Props) {
                     <SimpleInput placeholder={"Placeholder"} name={"voce"} />
 
 
-                    <RadioButton valueButton={"aceito"} label={"Aceito os termos de uso e politicas de privacidade"} />
+                    {/* <RadioButton valueButton={"aceito"} label={"Aceito os termos de uso e politicas de privacidade"} />
 
-                    <RadioButton valueButton={"pessoPreta"} label={"Me declaro uma pessoa preta"} />
+                    <RadioButton valueButton={"pessoPreta"} label={"Me declaro uma pessoa preta"} /> */}
 
 
 

@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { useStep } from 'react-hooks-helper'
 import Initial from '../Initial';
-import Step from '../Step';
 import StepOne from './StepOne'
 import StepTwo from './StepTwo'
 import MailChecked from '../MailChecked';
@@ -59,7 +58,6 @@ export default function Forms() {
     return(
         <>
         Steps
-        <Step/>
         </>
     )
 }

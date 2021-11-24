@@ -2,10 +2,8 @@ import React from 'react'
 import { ReactComponent as Checked } from '../../assets/photos/pana.svg'
 import { MailCheckedContainer } from './style'
 
-type Props = {
-    navigation: any,
-}
-export default function Initial(props: Props) {
+
+export default function MailChecked() {
 
     const handleMentee = () => {
         return ""
@@ -18,7 +16,7 @@ export default function Initial(props: Props) {
     return (
         <MailCheckedContainer>
             <Checked/>
-            <h1> Seu perfil foi enviado para aprovação! </h1>
+            <h1> Aguarde nosso email </h1>
             <p>Em breve entraremos em contato com você por email para informar a validação do seu cadastro.</p>
         </MailCheckedContainer>
     )
