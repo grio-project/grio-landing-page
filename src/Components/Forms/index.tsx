@@ -4,6 +4,7 @@ import Initial from '../Initial';
 import Step from '../Step';
 import StepOne from './StepOne'
 import StepTwo from './StepTwo'
+import MailChecked from '../MailChecked';
 
 
 const defaultData = {

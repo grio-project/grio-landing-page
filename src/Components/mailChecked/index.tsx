@@ -1,6 +1,5 @@
 import React from 'react'
-import { ReactComponent as People } from '../../assets/photos/people.svg'
-import Buttons from '../Buttons'
+import { ReactComponent as Checked } from '../../assets/photos/pana.svg'
 import { MailCheckedContainer } from './style'
 
 type Props = {
@@ -18,12 +17,9 @@ export default function Initial(props: Props) {
 
     return (
         <MailCheckedContainer>
-            <People />
-            <h1> Tudo certo, Fulano! </h1>
-            <p>Agora é só encontrar sua pessoa mentora na Griô!</p>
-            <div>
-                <Buttons className={"btn btn-warning"} label={"Quero ser mentorade!"} handleClick={handleMentee} />
-            </div>
+            <Checked/>
+            <h1> Seu perfil foi enviado para aprovação! </h1>
+            <p>Em breve entraremos em contato com você por email para informar a validação do seu cadastro.</p>
         </MailCheckedContainer>
     )
 }

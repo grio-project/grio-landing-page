@@ -9,7 +9,7 @@ padding: 32px;
 color: #666666;
 position: relative;
 width: 100%;
-height: 468px;
+height: 432px;
 font: Mulish;
 
 background: #FFFFFF;
