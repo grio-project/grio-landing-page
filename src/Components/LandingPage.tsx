@@ -7,15 +7,11 @@ import Forms from './Forms'
 import NextSteps from './NextSteps';
 import Profiles from './Profiles';
 
-
 class LandingPage extends Component {
   render() {
     return (
       <Container fluid>
-        
         <Forms />
-
-        
       </Container>
     );
   }

@@ -1,16 +1,36 @@
 import React from 'react'
 import SelectInput from '../../SelectInput'
 import Buttons from '../../Buttons'
+import Select from 'react-select'
 import SimpleInput from '../../SimpleInput'
 import { StepOneContenair, StepOneActions, StepOneForm } from './style'
 import Step from '../../Steps'
 import { collection, getDocs } from "firebase/firestore"
+import { getAreas } from '../../../services';
 
 type Props = {
     navigation: any,
     isMentor: any,
+    
 }
+ async function retornar(){
+    return  getAreas().then(
+    function(datasss) {
 
+        return {
+          sucesso: true,
+          data : datasss
+        }
+      },
+      function(datasss) {
+        return {
+         sucesso : false,
+         data : datasss
+        }
+      }
+    )
+ }
+  
 
 export default function StepOne(props: Props) {
     const handleClick = () => {
@@ -20,6 +40,8 @@ export default function StepOne(props: Props) {
 
         return
     }
+
+    
     return (
         <>
             <StepOneContenair >
@@ -46,7 +68,8 @@ export default function StepOne(props: Props) {
 
                     {props.isMentor ? <>
                         <label>Qual áreas voce quer mentorar?</label>
-                        <SelectInput placeholder={"Selecione as áreas?"} valueSelect={""} /> 
+                        
+
                         <label>Qual nível voce quer mentorar?</label>
                         <SelectInput placeholder={"Selecione o nível"} valueSelect={""} /></> : ''}
 
