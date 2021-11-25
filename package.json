@@ -1,6 +1,5 @@
 {
-    "homepage": "http://grio-project.github.io/grio-landing-page",
-    "name": "grio-landing-page",
+    "name": "",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
