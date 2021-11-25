@@ -1,4 +1,3 @@
-import React from 'react'
 import { ReactComponent as People } from '../../assets/photos/people.svg'
 import Buttons from '../Buttons'
 import { InitialContainer } from './style'
@@ -7,15 +6,6 @@ type Props = {
     navigation: any,
 }
 export default function Initial(props: Props) {
-
-    const handleMentee = () => {
-        return ""
-    }
-    const handleMentor = () => {
-        return ""
-
-    }
-
     return (
         <InitialContainer>
             <People />

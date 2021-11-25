@@ -1,4 +1,3 @@
-import React,{useState} from 'react'
 import { ButtonsContainer } from './style'
 
 type Props = {

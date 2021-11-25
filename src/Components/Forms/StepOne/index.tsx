@@ -1,6 +1,3 @@
-import React from 'react'
-import RadioButton from '../../RadioButton'
-import SelectInput from '../../SelectInput'
 import Buttons from '../../Buttons'
 import SimpleInput from '../../SimpleInput'
 import { StepOneContenair, StepOneActions, StepOneForm } from './style'
@@ -12,13 +9,6 @@ type Props = {
 
 
 export default function StepOne(props: Props) {
-    const handleClick = () => {
-        return
-    }
-    const handleSubmit = () => {
-
-        return
-    }
     return (
         <>
             <StepOneContenair >

@@ -1,5 +1,4 @@
-import React from 'react'
-import { StepContainer, StepLabel, StepLine, StepSpan } from './style'
+import { StepContainer, StepLabel, StepLine } from './style'
 
 type Props = {
     labelOne: any,
