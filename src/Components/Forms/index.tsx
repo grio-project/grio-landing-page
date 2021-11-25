@@ -5,7 +5,6 @@ import StepOne from './StepOne'
 import StepTwo from './StepTwo'
 import MailChecked from '../MailChecked';
 
-
 const defaultData = {
     nome: "",
     email: "",
@@ -46,8 +45,8 @@ export default function Forms() {
     //       [field]: value,
     //     }))
     //   }
-
     const props = { formData, setFormData, navigation, isMentor, setIsMentor }
+
     switch (step.id) {
         case "initial":
             return <Initial  {...props}/>;
