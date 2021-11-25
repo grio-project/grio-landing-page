@@ -6,6 +6,7 @@
         "@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining": "^7.16.0",
         "@popperjs/core": "^2.10.2",
         "@testing-library/jest-dom": "^5.11.4",
+        "firebase": "^9.5.0",
         "react": "^17.0.1",
         "react-bootstrap": "^1.4.3",
         "react-dom": "^16.14.0",

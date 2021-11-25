@@ -4,6 +4,7 @@ import Buttons from '../../Buttons'
 import SimpleInput from '../../SimpleInput'
 import { StepOneContenair, StepOneActions, StepOneForm } from './style'
 import Step from '../../Steps'
+import { collection, getDocs } from "firebase/firestore"
 
 type Props = {
     navigation: any,
