@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Buttons from '../../Buttons';
 
 export const StepOneContenair = styled.div`
     display: flex;

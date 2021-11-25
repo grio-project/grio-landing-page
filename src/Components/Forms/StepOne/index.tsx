@@ -12,13 +12,6 @@ type Props = {
 
 
 export default function StepOne(props: Props) {
-    const handleClick = () => {
-        return
-    }
-    const handleSubmit = () => {
-
-        return
-    }
     return (
         <>
             <StepOneContenair >

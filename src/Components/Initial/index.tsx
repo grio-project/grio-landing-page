@@ -1,4 +1,3 @@
-import React from 'react'
 import { ReactComponent as People } from '../../assets/photos/people.svg'
 import Buttons from '../Buttons'
 import { InitialContainer } from './style'

@@ -1,11 +1,6 @@
-import React from 'react'
 import Buttons from '../../Buttons'
-import RadioButton from '../../RadioButton'
-import SelectInput from '../../SelectInput'
-import SimpleInput from '../../SimpleInput'
 import { StepTwoContenair, StepTwoAction, StepTags, StepLabel} from './style'
 import Step from '../../Steps'
-import Icon from '../../../assets/photos/icon.svg'
 
 type Props = {
   formData:any,   
@@ -17,10 +12,7 @@ export default function StepTwo(props: Props){
     const handleClick = () => {
         return 
       }
-      const handleSubmit = () => {
-  
-        return
-      }
+
     return(
         <>
          
