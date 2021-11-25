@@ -1,5 +1,4 @@
 import React from 'react'
-import RadioButton from '../../RadioButton'
 import SelectInput from '../../SelectInput'
 import Buttons from '../../Buttons'
 import SimpleInput from '../../SimpleInput'
@@ -32,8 +31,17 @@ export default function StepOne(props: Props) {
                     <label>Qual seu melhor email?</label>
                     <SimpleInput placeholder={"Digite seu email"} name={"email"} />
 
+                    <label>O que você quer aprender?</label>
+                    <SimpleInput placeholder={"Que area você quer aprender?"} name={"aprender"} />
+
                     <label>Qual gênero você se identifica?</label>
                     <SimpleInput placeholder={"Como você se identifica?"} name={"genero"} />
+                    
+                    <label>Qual sua profissão?</label>
+                    <SimpleInput placeholder={"Com o que você trabalha?"} name={"trabalho"} />
+
+                    <label>Qual sua senioridade?</label>
+                    <SimpleInput placeholder={"Qual seu nível?"} name={"senioridade"} />
 
                     {props.isMentor ? <>
                         <label>Qual áreas voce quer mentorar?</label>
