@@ -57,4 +57,28 @@ export const StepContainer = styled.div`
 .progressbar li.active + li:after {
     background-color: #606C36;
 }
+
+
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 500px;
+        margin-left: 10px; 
+    }
+@media screen and (max-width: 450px) {
+    .container {
+        width: 400px;
+        margin-left: 0px; 
+    }
+
+@media screen and (max-width: 360px) {
+    .container {
+        width: 300px;
+        margin-left: -10px; 
+    }
+    .progressbar li {
+       font-size:14px;
+    }
+}
 `;

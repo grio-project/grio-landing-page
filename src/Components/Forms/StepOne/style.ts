@@ -17,6 +17,11 @@ export const StepOneContenair = styled.div`
     border: 1px solid #DDDDDD;
     box-sizing: border-box;
     border-radius: 8px;
+   
+    @media(max-width:760px){
+        font-size:14px;
+      }
+
      
       
 `;
@@ -42,14 +47,24 @@ export const StepOneActions = styled.div`
   
     }
     @media(max-width:760px){
+  
       button{
         width: 130px;
         height: 48px;
-        size:16px;
+        font-size:12px;
         box-sizing: border-box;
         border-radius: 8px;
         margin:20px;
       }
+    @media(max-width:400px){
+        button{
+          width: 80px;
+          height: 48px;
+          font-size:12px;
+          box-sizing: border-box;
+          border-radius: 8px;
+          margin:20px;
+        }
     }
   }
   

@@ -6,7 +6,8 @@ export const SelectIputContainer = styled.div`
       height: 38px;
       color: $gray_dark1;
       margin: 0;
-  
+
+
       &::placeholder {
         font-size: 14px;
         color: #a7b0be;
