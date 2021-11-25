@@ -8,7 +8,6 @@ type Props = {
     setIsMentor: any,
 }
 export default function Initial(props: Props) {
-
     const handleMentee = () => {
         props.setIsMentor(true)
         props.navigation.next()
