@@ -6,23 +6,9 @@ class Cover extends Component {
   render() {
     return (
       <div className="cover-image">
-        <Container className='cover'>
-          <Row>
-          <Col  >
-            <p>
-              <img src={GrioLogo} alt="Grio Logo"/>
-            </p>
-          </Col>
-          <Col >
-            <p className="special-font cover-title">
-              PLATAFORMA
-            </p>
-            <p className="title-font cover-title">
-              DE CONEXÕES DE PESSOAS
-            </p>
-          </Col>
-        </Row>    
-        </Container>
+        
+          <img src={GrioLogo} alt="Grio Logo"/> 
+        
       </div>
     );
   }
