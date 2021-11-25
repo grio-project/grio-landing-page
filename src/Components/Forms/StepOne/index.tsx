@@ -36,7 +36,6 @@ export default function StepOne(props: Props) {
                     <label>Qual sua senioridade?</label>
                     <SimpleInput placeholder={"Qual seu nível?"} name={"senioridade"} />
 
-
                     {props.isMentor ? <>
                         <label>Qual áreas voce quer mentorar?</label>
                         <SelectInput placeholder={"Selecione as áreas?"} valueSelect={""} /> 
