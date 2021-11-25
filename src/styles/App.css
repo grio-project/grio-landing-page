@@ -67,6 +67,12 @@ img {
     align-items: center;
     
 }
+.cover-image{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
 
 .cover-title {
     font-size: 3em;
