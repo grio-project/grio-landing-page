@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StepTwoContenair = styled.div`
   width: 100%;
-  height: 100%;  
+  height: 590px;  
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -38,6 +38,7 @@ export default function Forms() {
         steps,
         initialStep: 0
     })
+    const [isMentor, setIsMentor] = useState<Boolean>(false);
 
     // const updateFormDataField = (field: any, value: any) => {
     //     setFormData(prevState => ({
@@ -46,7 +47,7 @@ export default function Forms() {
     //     }))
     //   }
 
-    const props = { formData, setFormData, navigation }
+    const props = { formData, setFormData, navigation, isMentor, setIsMentor }
     switch (step.id) {
         case "initial":
             return <Initial  {...props}/>;
@@ -60,7 +61,8 @@ export default function Forms() {
 
     return(
         <>
-        Steps
+
+         Steps
         </>
     )
 }

@@ -1,32 +1,25 @@
-import { StepContainer, StepLabel, StepLine } from './style'
+import React from 'react'
+import { StepContainer } from './style'
 
 type Props = {
-    labelOne: any,
-    labelTwo: string,
-    labelThree: string,
+    active:string,
+    active2:any,
+    active3:any,
 }
 
 
 export default function Steps(props: Props) {
     return (
         <>
-            <StepContainer>
-                <StepLabel>
-                    <label>{props.labelOne}</label>
-                    
-                        <span> Você</span>
-                    
-                </StepLabel>
-                <StepLine />
-                <StepLabel>
-                    <label>{props.labelTwo}</label>
-                    <span>Mentoria</span>
-                </StepLabel>
-                <StepLine />
-                <StepLabel>
-                    <label>{props.labelThree}</label>
-                    <span>Confirmação</span>
-                </StepLabel>
+           <StepContainer>
+                <div className="container">
+                    <ul className="progressbar">
+                        <li className={props.active}>Sobre você</li>
+                        <li className={props.active2}>Sobre a mentoria</li>
+                        <li className={props.active3}>Confirmação</li>
+
+                    </ul>
+                </div>
             </StepContainer>
         </>
     )

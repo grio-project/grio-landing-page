@@ -56,11 +56,14 @@ export const StepOneActions = styled.div`
 `;
 
 export const StepOneForm = styled.form`
-width: 50%;
-margin-top:50px;
-span{
-  width:200px;
-}
+  width: 50%;
+  margin-top:50px;
+  label{
+    margin-top: 10px;
+  }
+  span{
+    width:200px;
+  }
 `;
 
 
