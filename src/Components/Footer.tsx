@@ -5,7 +5,7 @@ class Footer extends Component {
     return (
       <div className='footer contrast-links'>
         <p>Griô Mentoria Online</p>
-        <a  href='mailto:falecomgrio@gmail.com'>Fale conosco - falecomgrio@gmail.com</a>
+        <a  href='mailto:nana@grio.tech'>Fale conosco - nana@grio.tech</a>
       </div>
     );
   }

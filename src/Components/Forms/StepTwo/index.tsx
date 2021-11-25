@@ -10,7 +10,7 @@ import Icon from '../../../assets/photos/icon.svg'
 type Props = {
   formData:any,   
   navigation: any,
-
+  isMentor: any,
 }
 
 export default function StepTwo(props: Props){
@@ -25,9 +25,9 @@ export default function StepTwo(props: Props){
         <>
          
           <StepTwoContenair>
-              <Step labelOne="1" labelTwo="2" labelThree="3" />
+              <Step active="active" active2="active " active3=" " />
                 <StepLabel>
-                   <label>Dentro da sua area de mentoria, escolha os tópicos você gostaria de ensinar?</label>    
+                   <label>Dentro da sua área de mentoria, escolha os tópicos você gostaria de {props.isMentor ? "ensinar" : "estudar" }?</label>    
                 </StepLabel>
               <StepTags>
                 <Buttons className={"tag"} handleClick={handleClick} label={"UX Design"} />

@@ -3,7 +3,7 @@ import { SelectIputContainer } from './style'
 
 type Props = {
     valueSelect: string, 
-    placeholder: string
+    placeholder: string,
 }
 
 export default function SelectInput(props: Props) {
