@@ -51,7 +51,7 @@ export default function Forms() {
         case "initial":
             return <Initial  {...props}/>;
         case "aboutYou":
-            return <StepOne {...props} />;
+            return <StepOne {...props}/>;
         case "aboutYourMentoring":
             return <StepTwo {...props} />;
         case "sendData":

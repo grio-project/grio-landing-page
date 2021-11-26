@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const SelectIputContainer = styled.div`
+export const SelectInputContainer = styled.div`
 
       width: 100%;
       height: 38px;
