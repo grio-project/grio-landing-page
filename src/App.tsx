@@ -6,9 +6,9 @@ import Cover from './Components/Cover';
 import LandingPage from './Components/LandingPage'
 import Footer from './Components/Footer'
 
-
 class App extends Component {
   render() {
+  
     return (
       <div className='App'>
           <Cover />
@@ -16,6 +16,7 @@ class App extends Component {
             <LandingPage />
           </Container>
         <Footer />  
+        
         
       </div>
     );

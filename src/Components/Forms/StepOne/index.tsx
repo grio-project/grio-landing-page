@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import SelectInput from '../../SelectInput'
 import Buttons from '../../Buttons'
+import Select from 'react-select'
 import SimpleInput from '../../SimpleInput'
 import { StepOneContenair, StepOneActions, StepOneForm } from './style'
 import Step from '../../Steps'
+import { collection, getDocs } from "firebase/firestore/lite"
+import { firestore } from "../../../services/firebase.config";
+//import { getAreas } from '../../../services';
 
 type Props = {
     navigation: any,
@@ -12,6 +16,39 @@ type Props = {
 
 
 export default function StepOne(props: Props) {
+    var initial: string[] = []
+    const [categories, setCategories] = useState(initial);
+    const [isInitialRender, setIsInitialRender] = useState(true);
+    const handleClick = () => {
+        return
+    }
+    const handleSubmit = () => {
+
+        return
+    }
+
+    const updateAreas = () => {
+        console.log(isInitialRender);
+        if (isInitialRender){
+            var items: string[] = []
+            const c = collection(firestore, "areas");
+            getDocs(c).then((areaSnapshot) => {
+                areaSnapshot.forEach((doc) => {
+                    // doc.data() is never undefined for query doc snapshots
+                    items.push(doc.id);
+                });
+                setCategories(items);
+            });
+            setIsInitialRender(false);
+        }
+    }
+
+      // Similar to componentDidMount and componentDidUpdate:  
+      useEffect(() => {    
+          // Update the document title using the browser API    
+          updateAreas();
+        });                
+    
     return (
         <>
             <StepOneContenair >
@@ -25,7 +62,7 @@ export default function StepOne(props: Props) {
                     <SimpleInput placeholder={"Digite seu email"} name={"email"} />
 
                     <label>O que você quer aprender?</label>
-                    <SimpleInput placeholder={"Que area você quer aprender?"} name={"aprender"} />
+                    <SelectInput placeholder={"Que area você quer aprender?"} options={categories} />
 
                     <label>Qual gênero você se identifica?</label>
                     <SimpleInput placeholder={"Como você se identifica?"} name={"genero"} />
@@ -38,9 +75,10 @@ export default function StepOne(props: Props) {
 
                     {props.isMentor ? <>
                         <label>Qual áreas voce quer mentorar?</label>
-                        <SelectInput placeholder={"Selecione as áreas?"} valueSelect={""} /> 
+                        
+
                         <label>Qual nível voce quer mentorar?</label>
-                        <SelectInput placeholder={"Selecione o nível"} valueSelect={""} /></> : ''}
+                        <SelectInput placeholder={"Selecione o nível"} options={["junin", "plenin", "oldfart"]} /></> : ''}
 
                     <label>Conte um pouco mais sobre você:</label>
                     <SimpleInput placeholder={"Queremos conhecer você!"} name={"voce"} />

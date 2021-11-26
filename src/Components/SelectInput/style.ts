@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
-export const SelectIputContainer = styled.div`
+export const SelectInputContainer = styled.div`
 
       width: 100%;
       height: 38px;
       color: $gray_dark1;
       margin: 0;
-  
+
+
       &::placeholder {
         font-size: 14px;
         color: #a7b0be;
