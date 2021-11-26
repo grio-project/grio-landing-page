@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StepTwoContenair = styled.div`
+export const StepTwoContainer = styled.div`
   width: 100%;
   height: 590px;  
   display: flex;

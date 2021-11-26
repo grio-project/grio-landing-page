@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StepOneContenair = styled.div`
+export const StepOneContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,9 +19,7 @@ export const StepOneContenair = styled.div`
    
     @media(max-width:760px){
         font-size:14px;
-      }
-
-     
+    }
       
 `;
 

@@ -1,31 +1,37 @@
-import React,{useState} from 'react'
-import { SimpleInputContainer } from './style'
+import React, { useState } from "react";
+import { SimpleInputContainer } from "./style";
 
 type Props = {
-  placeholder: string,
-  name: string,
-}
+  placeholder: string;
+  handleValue: any;
+  value: string;
+  isTextArea: boolean;
+};
 
 export default function SimpleInput(props: Props) {
-  const [value, setValue] = useState()  
-
-  const handleValue = (e:any) => {
-      setValue(e.target.value)
-    }
   return (
     <SimpleInputContainer>
-      <div className="mb-3">
+      {props.isTextArea ? (
         <input
-         className="form-control"
-         placeholder={props.placeholder}
-          name={props.name}
-          value={value}
-          onChange={e=>handleValue(e)}
+          className="text-area"
+          placeholder={props.placeholder}
+          value={props.value}
+          onChange={props.handleValue}
           type="text"
-        // className="SimpleInput-input"
-          
+          required
+          minLength={3}
         />
-      </div>
+      ) : (
+        <input
+          className="simple-input"
+          placeholder={props.placeholder}
+          value={props.value}
+          onChange={props.handleValue}
+          type="text"
+          required
+          minLength={3}
+        />
+      )}
     </SimpleInputContainer>
-  )
+  );
 }
