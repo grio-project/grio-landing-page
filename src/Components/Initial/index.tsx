@@ -1,4 +1,3 @@
-import React from 'react'
 import { ReactComponent as People } from '../../assets/photos/people.svg'
 import Buttons from '../Buttons'
 import { InitialContainer } from './style'
@@ -9,7 +8,6 @@ type Props = {
     setIsMentor: any,
 }
 export default function Initial(props: Props) {
-
     const handleMentee = () => {
         props.setIsMentor(true)
         props.navigation.next()

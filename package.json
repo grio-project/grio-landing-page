@@ -1,10 +1,12 @@
 {
-    "homepage": "http://grio-project.github.io/grio-landing-page",
-    "name": "grio-landing-page",
+    "name": "",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+        "@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining": "^7.16.0",
+        "@popperjs/core": "^2.10.2",
         "@testing-library/jest-dom": "^5.11.4",
+
         "@testing-library/react": "^11.1.0",
         "@testing-library/user-event": "^12.1.10",
         "@types/jest": "^26.0.15",
@@ -14,24 +16,22 @@
         "@types/styled-components": "^5.1.15",
         "bootstrap": "^4.5.3",
         "firebase": "^9.5.0",
+        "help": "^3.0.2",
         "react": "^17.0.1",
         "react-bootstrap": "^1.4.3",
-        "react-dom": "^17.0.1",
+        "react-dom": "^16.14.0",
         "react-hooks-helper": "^1.6.0",
-        "react-iframe": "^1.8.0",
         "react-scripts": "4.0.1",
         "react-select": "^5.2.1",
         "styled-components": "^5.3.3",
         "typescript": "^4.5.2",
-        "web-vitals": "^0.2.4"
+        "web-vitals": "^2.1.2"
     },
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
         "start-dev": "BROWSER=none react-scripts start"
     },
     "eslintConfig": {
@@ -53,7 +53,9 @@
         ]
     },
     "devDependencies": {
+        "@types/node": "^16.11.10",
+        "@types/react-dom": "^17.0.11",
         "@types/react-hooks-helper": "^1.6.4",
-        "gh-pages": "^3.1.0"
+        "@types/styled-components": "^5.1.15"
     }
 }

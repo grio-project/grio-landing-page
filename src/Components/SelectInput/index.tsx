@@ -1,9 +1,9 @@
 import React,{useState} from 'react'
-import { SelectIputContainer } from './style'
+import { SelectInputContainer } from './style'
 
 type Props = {
-    valueSelect: string, 
-    placeholder: string,
+  placeholder: any,
+  options: string[],
 }
 
 export default function SelectInput(props: Props) {
@@ -11,21 +11,24 @@ export default function SelectInput(props: Props) {
   const selectedValue = null;
 
   const handleValue = (e:any) => {
-      setValue(e.target.value)
-    }
+    setValue(e.target.value)
+  }
+
+  const items = []
+
+  for (const value of props.options) {
+    items.push(<option key={value} value={value}>{value}</option>)
+  }
 
   return (
 
-    <SelectIputContainer>
+    <SelectInputContainer>
         <div className="form-group">
-            <select className="form-control" >
-                <option selected>Selecione uma opção</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+            <select className="form-control" placeholder={props.placeholder} onChange={e=>handleValue(e)}>
+              {items}
             </select>
         </div>
-    </SelectIputContainer>
+    </SelectInputContainer>
    
   )
 }

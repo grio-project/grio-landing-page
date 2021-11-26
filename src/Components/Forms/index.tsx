@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useStep } from 'react-hooks-helper'
 import Initial from '../Initial';
 import StepOne from './StepOne'
@@ -51,7 +51,7 @@ export default function Forms() {
         case "initial":
             return <Initial  {...props}/>;
         case "aboutYou":
-            return <StepOne {...props} />;
+            return <StepOne {...props}/>;
         case "aboutYourMentoring":
             return <StepTwo {...props} />;
         case "sendData":
