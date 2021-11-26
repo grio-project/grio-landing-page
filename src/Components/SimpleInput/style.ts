@@ -26,6 +26,7 @@ export const SimpleInputContainer = styled.div`
         margin: 0;
         color: #666666;
         font-weight: normal;
+        color: #D6D7DA;
       }
 
       .simple-input {
@@ -36,8 +37,8 @@ export const SimpleInputContainer = styled.div`
         display: block;
         width: 100%;
         box-sizing: border-box;
-        margin: 0;
-        color: #666666;
         font-weight: normal;
+        color: #D6D7DA;
+        margin: 0;
       }
 `;
