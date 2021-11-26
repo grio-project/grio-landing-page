@@ -9,7 +9,6 @@ import { collection, getDocs } from "firebase/firestore/lite"
 import { firestore } from "../../../services/firebase.config";
 //import { getAreas } from '../../../services';
 
-
 type Props = {
     navigation: any,
     isMentor: any,
@@ -27,8 +26,6 @@ export default function StepOne(props: Props) {
 
         return
     }
-
-
 
     const updateAreas = () => {
         console.log(isInitialRender);
@@ -51,7 +48,6 @@ export default function StepOne(props: Props) {
           // Update the document title using the browser API    
           updateAreas();
         });                
-
     
     return (
         <>
