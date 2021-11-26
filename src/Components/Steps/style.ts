@@ -1,61 +1,64 @@
 import styled from "styled-components";
 
 export const StepContainer = styled.div`
-.container {
-    width: 600px;
-    margin-left: 30px; 
-}
-.progressbar {
-    counter-reset: step;
-}
-.progressbar li {
-    list-style-type: none;
-    width: 30%;
-    float: left;
-    font-size: 16px;
-    position: relative;
-    text-align: center;
+	.container {
+			width: 600px;
+			margin-left: 30px; 
+	}
 
-    
-}
-.progressbar li:before {
-    width: 30px;
-    height: 30px;
-    content: counter(step);
-    counter-increment: step;
-    line-height: 30px;
-    border: 2px solid #D6D7DA;
-    display: block;
-    text-align: center;
-    margin: 0 auto 10px auto;
-    border-radius: 50%;
-   
-}
-.progressbar li:after {
-    width: 100%;
-    height: 2px;
-    content: '';
-    position: absolute;
-    background-color: #606C36;
-    top: 15px;
-    left: -50%;
-    z-index: -1;
-}
-.progressbar li:first-child:after {
-    content: none;
-}
-.progressbar li.active {
-    color: #606C36;
-    
-}
-.progressbar li.active:before {
-    border-color: #606C36;
-    background: #606C36;
-    color:white;
-    
-}
-.progressbar li.active + li:after {
-    background-color: #606C36;
+	.progressbar {
+    counter-reset: step;
+
+    li {
+			list-style-type: none;
+			width: 30%;
+			float: left;
+			font-size: 16px;
+			position: relative;
+			text-align: center;
+
+			:not(:first-child) {
+				&::after {
+					content: ' ';
+					background-color: #D6D7DA;
+					width: 80px;
+					top: 14px;
+					left: -50px;
+					height: 1px;
+					margin: 0 5px;
+					position: absolute;
+				}
+			}
+
+			&.active {
+				color: #606C36;	
+
+				::before {
+					border-color: #606C36;
+					background: #606C36;
+					color:white;			
+				}
+
+				:not(:first-child) {
+					&::after {
+						background-color: #606C36;
+					}
+				}
+			}
+			
+			::before {
+				width: 30px;
+				height: 30px;
+				content: counter(step);
+				counter-increment: step;
+				line-height: 30px;
+				border: 2px solid #D6D7DA;
+				display: block;
+				text-align: center;
+				margin: 0 auto 10px auto;
+				border-radius: 50%;
+			}
+    }
 }
 
 

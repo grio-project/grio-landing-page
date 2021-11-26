@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+form button {
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: .65;
+}
+
+button[disabled] {
+  background: #ccc;
+  cursor: not-allowed;
+}
