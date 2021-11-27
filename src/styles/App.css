@@ -1,134 +1,135 @@
 @font-face {
-    font-family: 'Hussar';
-    src: local('Hussar'), url(../assets/fonts/hussar-ekologiczne-1-maisfontes.b4fe/hussar-ekologiczne-1.otf) format('opentype');
+  font-family: "Hussar";
+  src: local("Hussar"),
+    url(../assets/fonts/hussar-ekologiczne-1-maisfontes.b4fe/hussar-ekologiczne-1.otf)
+      format("opentype");
 }
 
 @font-face {
-    font-family: 'League Spartan';
-    src: local('League Spartan'), url(../assets/fonts/LeagueSpartan/LeagueSpartan-Bold.otf) format('opentype');
+  font-family: "League Spartan";
+  src: local("League Spartan"),
+    url(../assets/fonts/LeagueSpartan/LeagueSpartan-Bold.otf) format("opentype");
 }
 
 @font-face {
-    font-family: 'Roboto Condensed Regular';
-    src: local('Roboto Condensed Regular'), url(../assets/fonts/RobotoCondensed/RobotoCondensed-Regular.ttf) format('truetype');
+  font-family: "Roboto Condensed Regular";
+  src: local("Roboto Condensed Regular"),
+    url(../assets/fonts/RobotoCondensed/RobotoCondensed-Regular.ttf)
+      format("truetype");
 }
 
 body {
-    font-size: 16px;
+  font-size: 16px;
 }
 
-img { 
-    max-width: 100%; 
-    height: auto; 
+img {
+  max-width: 100%;
+  height: auto;
 }
-
 
 .App {
-    color: #150941;
-    background-color: #f1f1f2;
-    font-family: 'Roboto Condensed Regular';
+  color: #150941;
+  background-color: #f1f1f2;
+  font-family: "Roboto Condensed Regular";
 }
 
 .special-font {
-    font-family: 'Hussar';
+  font-family: "Hussar";
 }
 
 .title-font {
-    font-family: 'League Spartan';
+  font-family: "League Spartan";
 }
 
 .subtitle-font {
-    font-size: 1.5em ;
+  font-size: 1.5em;
 }
 
 .std-slide {
-    min-height: 400px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;   
-    padding-top: 50px;
-    padding-bottom: 50px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-
-
 .title {
-    font-size: 2em;
-    font-family: 'League Spartan';
-    color: #58361d;
-    text-transform: uppercase;
+  font-size: 2em;
+  font-family: "League Spartan";
+  color: #58361d;
+  text-transform: uppercase;
 }
 
 .cover {
-    min-height: 600px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    
+  min-height: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
-.cover-image{
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+.cover-image {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .cover-title {
-    font-size: 3em;
-    color: #58361d;
-    text-align: center;
+  font-size: 3em;
+  color: #58361d;
+  text-align: center;
 }
 
-
-
 .profile-columns img {
-    max-width: 50%;
+  max-width: 50%;
 }
 
 .footer {
-    margin-top:30px;
-    text-align: center;
-    padding-bottom: 50px;
-    background-color: #58361d;
-    color: white
+  margin-top: 30px;
+  text-align: center;
+  padding-bottom: 50px;
+  background-color: #58361d;
+  color: white;
 }
 
 .contrast-links a {
-    color: white
+  color: white;
 }
 
 @media screen and (max-width: 600px) {
-    body {
-      font-size: 10px;
-    }
- 
-    .std-slide {
-        min-height: 300px;        
-    }
-
-    .team-columns img {
-        max-width: 75%;
-    }
-
-    .profile-columns img {
-        max-width: 100%;
-    }
-    
-
-    .cover {
-        min-height: 250px;
-        background: rgb(88,54,29);
-        background: linear-gradient(180deg, rgba(88,54,29,1) 0%, rgba(180,144,117,1) 35%, rgba(241,241,242,1) 100%);
-
-    }
-    
-    .cover-title {
-        font-size: 2em;
-    }
-    
-    .cover-image {
-        background-image:none
-    }
-
+  body {
+    font-size: 10px;
   }
+
+  .std-slide {
+    min-height: 300px;
+  }
+
+  .team-columns img {
+    max-width: 75%;
+  }
+
+  .profile-columns img {
+    max-width: 100%;
+  }
+
+  .cover {
+    min-height: 250px;
+    background: rgb(88, 54, 29);
+    background: linear-gradient(
+      180deg,
+      rgba(88, 54, 29, 1) 0%,
+      rgba(180, 144, 117, 1) 35%,
+      rgba(241, 241, 242, 1) 100%
+    );
+  }
+
+  .cover-title {
+    font-size: 2em;
+  }
+
+  .cover-image {
+    background-image: none;
+  }
+}

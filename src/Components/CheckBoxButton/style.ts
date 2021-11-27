@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CheckboxButtonContainer = styled.div`
   input {
@@ -6,15 +6,15 @@ export const CheckboxButtonContainer = styled.div`
 
     &:checked {
       + label {
-        background-color: #606C36;
-        color: #FFF;
+        background-color: #606c36;
+        color: #fff;
       }
     }
   }
 
   label {
     align-items: center;
-    background-color: #FFF;
+    background-color: #fff;
     border-radius: 32px;
     border: 1px solid #666;
     cursor: pointer;
@@ -23,8 +23,6 @@ export const CheckboxButtonContainer = styled.div`
     margin: 0;
     margin: 8px;
     padding: 16px;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
- 
 `;
-
