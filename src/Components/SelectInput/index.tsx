@@ -18,7 +18,6 @@ export default function SelectInput(props: Props) {
   }
 
   return (
-
     <SelectInputContainer>
         <div className="form-group">
             <select className="form-control" placeholder={props.placeholder} onChange={props.handleValue} required>

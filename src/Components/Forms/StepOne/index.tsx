@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
 import SelectInput from "../../SelectInput";
 import Buttons from "../../Buttons";
-import Select from "react-select";
 import SimpleInput from "../../SimpleInput";
 import { StepOneContainer, StepOneActions, StepOneForm } from "./style";
 import Step from "../../Steps";
-import { collection, getDocs } from "firebase/firestore/lite";
+import { collection, getDocs } from "firebase/firestore";
 import { firestore } from "../../../services/firebase.config";
-//import { getAreas } from '../../../services';
 
 type Props = {
   navigation: any;
@@ -41,7 +39,7 @@ export default function StepOne(props: Props) {
 
   const updateAreas = () => {
     if (isInitialRender) {
-      var items: string[] = [];
+      var items: string[] = [""];
       const c = collection(firestore, "areas");
       getDocs(c).then((areaSnapshot) => {
         areaSnapshot.forEach((doc) => {
@@ -85,20 +83,40 @@ export default function StepOne(props: Props) {
             }
           />
 
-          {!props.isMentor ? (
+          {props.isMentor ? (
+            <>
+            <label>Qual área você quer mentorar?</label>
+            <SelectInput
+              placeholder={"Que area você quer ensinar?"}
+              options={categories}
+              handleValue={(e: any) =>
+                props.updateFormDataField("area", e.target.value)
+              }
+            />
+
+            <label>Qual nível você quer mentorar?</label>
+            <SelectInput
+              placeholder={"Selecione o nível"}
+              options={["", "Júnior", "Pleno", "Senior"]}
+              handleValue={(e: any) => {
+                console.log(e.target.value);
+                props.updateFormDataField("nivelMentorar", e.target.value)
+              }}
+            />
+          </>
+          ) : (
             <>
               <label>O que você quer aprender?</label>
               <SelectInput
                 placeholder={"Que area você quer aprender?"}
                 options={categories}
                 handleValue={(e: any) =>
-                  props.updateFormDataField("aprenderEnsinar", e.target.value)
+                  props.updateFormDataField("area", e.target.value)
                 }
               />
             </>
-          ) : (
-            ""
           )}
+
 
           <label>Qual gênero você se identifica?</label>
           <SimpleInput
@@ -130,30 +148,7 @@ export default function StepOne(props: Props) {
             }
           />
 
-          {props.isMentor ? (
-            <>
-              <label>Qual área você quer mentorar?</label>
-              <SelectInput
-                placeholder={"Que area você quer ensinar?"}
-                options={categories}
-                handleValue={(e: any) =>
-                  props.updateFormDataField("area", e.target.value)
-                }
-              />
-
-              <label>Qual nível você quer mentorar?</label>
-              <SelectInput
-                placeholder={"Selecione o nível"}
-                options={["junin", "plenin", "oldfart"]}
-                handleValue={(e: any) =>
-                  props.updateFormDataField("nivelMentorar", e.target.value)
-                }
-              />
-            </>
-          ) : (
-            ""
-          )}
-
+          
           <label>Conte um pouco mais sobre você:</label>
           <SimpleInput
             isTextArea={true}
@@ -187,7 +182,9 @@ export default function StepOne(props: Props) {
                 !genero ||
                 !profissao ||
                 !senioridade ||
-                !sobreVoce
+                !sobreVoce ||
+                !area ||
+                (props.isMentor && !nivelMentorar)
               }
             />
           </StepOneActions>

@@ -75,7 +75,7 @@ export const StepTags =  styled.div
     `
     display: flex;
     width: 50%;
-    height: auto;
+    justify-content: center;
     flex-wrap: wrap;
     padding:6px;
    
