@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const ButtonsContainer = styled.div`
-    
-    
       color: #66666;
       margin: 0;
       font: Mulish;
