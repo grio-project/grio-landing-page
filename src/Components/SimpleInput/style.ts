@@ -40,5 +40,7 @@ export const SimpleInputContainer = styled.div`
         font-weight: normal;
         color: #D6D7DA;
         margin: 0;
+        color: #666666;
+        font-weight: normal;
       }
 `;
