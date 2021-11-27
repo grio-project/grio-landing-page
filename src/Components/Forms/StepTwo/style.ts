@@ -1,25 +1,20 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StepTwoContainer = styled.div`
   width: 100%;
-  height: 590px;  
+  height: 590px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 32px;
   color: #666666;
-  
 
-
-  background: #FFFFFF;
+  background: #ffffff;
   box-sizing: border-box;
   border-radius: 8px;
 
-
-
   @media screen and (max-width: 400px) {
-    height:100%;
-
+    height: 100%;
   }
 `;
 export const StepTwoAction = styled.div`
@@ -67,44 +62,33 @@ export const StepTwoAction = styled.div`
   }
 
 `;
-export const StepLabel =  styled.div`
+export const StepLabel = styled.div`
   margin-top: 50px;
+`;
+export const StepTags = styled.div`
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 6px;
 
-`
-export const StepTags =  styled.div
-    `
-    display: flex;
-    width: 50%;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:6px;
-   
-    @media screen and (max-width: 763px) {
-      width:100%;
-      button{
-        width: 50px;
-        height: 48px;
-  
-      }
-
-    }
-
- 
-    
-    background: #FFFFFF;
-
-    button{
-
-      width: auto;
+  @media screen and (max-width: 763px) {
+    width: 100%;
+    button {
+      width: 50px;
       height: 48px;
-      border: 1px solid #666666;
-      box-sizing: border-box;
-      border-radius: 15px;
-      color: #666666;
-      margin: 6px;
     }
-    
-  
-   
-    
-    `;
+  }
+
+  background: #ffffff;
+
+  button {
+    width: auto;
+    height: 48px;
+    border: 1px solid #666666;
+    box-sizing: border-box;
+    border-radius: 15px;
+    color: #666666;
+    margin: 6px;
+  }
+`;

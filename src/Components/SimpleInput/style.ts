@@ -1,19 +1,18 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const SimpleInputContainer = styled.div`
-      width: 100%;
+  width: 100%;
 
-      input{
-       &::placeholder {
-        font-size: 16px;
-        color: #C7C9C7;
-        font-weight: 400;
-        
-      }  
-        &:-webkit-autofill {
-          box-shadow: 0 0 0 30px white inset;
-        }
-      }
+  input {
+    &::placeholder {
+      font-size: 16px;
+      color: #c7c9c7;
+      font-weight: 400;
+    }
+    &:-webkit-autofill {
+      box-shadow: 0 0 0 30px white inset;
+    }
+  }
 
       .text-area{
         height: 100px;

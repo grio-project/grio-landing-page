@@ -1,28 +1,28 @@
-import React,{useState} from 'react'
-import { RadioButtonContainer } from './style'
+import React, { useState } from "react";
+import { RadioButtonContainer } from "./style";
 
 type Props = {
-  valueButton: string
-  label:string
-}
+  valueButton: string;
+  label: string;
+};
 
 export default function RadioButton(props: Props) {
-  const [value, setValue] = useState()  
+  const [value, setValue] = useState();
   const selectedValue = null;
 
-  const handleValue = (e:any) => {
-      setValue(e.target.value)
-    }
+  const handleValue = (e: any) => {
+    setValue(e.target.value);
+  };
 
   return (
     <RadioButtonContainer>
-        <input
-           className="form-check-input"
-            type="radio"
-            onChange={handleValue}
-            value={props.valueButton}
-         />
-         <label>{props.label}</label>
+      <input
+        className="form-check-input"
+        type="radio"
+        onChange={handleValue}
+        value={props.valueButton}
+      />
+      <label>{props.label}</label>
     </RadioButtonContainer>
-  )
+  );
 }

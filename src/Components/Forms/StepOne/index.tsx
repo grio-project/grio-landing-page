@@ -21,7 +21,6 @@ export default function StepOne(props: Props) {
   const {
     nome,
     email,
-    aprenderEnsinar,
     genero,
     profissao,
     senioridade,
@@ -30,12 +29,6 @@ export default function StepOne(props: Props) {
     sobreVoce,
   } = props.formData;
 
-  const handleClick = () => {
-    return;
-  };
-  const handleSubmit = () => {
-    return;
-  };
 
   const updateAreas = () => {
     if (isInitialRender) {
@@ -85,25 +78,25 @@ export default function StepOne(props: Props) {
 
           {props.isMentor ? (
             <>
-            <label>Qual área você quer mentorar?</label>
-            <SelectInput
-              placeholder={"Que area você quer ensinar?"}
-              options={categories}
-              handleValue={(e: any) =>
-                props.updateFormDataField("area", e.target.value)
-              }
-            />
+              <label>Qual área você quer mentorar?</label>
+              <SelectInput
+                placeholder={"Que area você quer ensinar?"}
+                options={categories}
+                handleValue={(e: any) =>
+                  props.updateFormDataField("area", e.target.value)
+                }
+              />
 
-            <label>Qual nível você quer mentorar?</label>
-            <SelectInput
-              placeholder={"Selecione o nível"}
-              options={["", "Júnior", "Pleno", "Senior"]}
-              handleValue={(e: any) => {
-                console.log(e.target.value);
-                props.updateFormDataField("nivelMentorar", e.target.value)
-              }}
-            />
-          </>
+              <label>Qual nível você quer mentorar?</label>
+              <SelectInput
+                placeholder={"Selecione o nível"}
+                options={["", "Júnior", "Pleno", "Senior"]}
+                handleValue={(e: any) => {
+                  console.log(e.target.value);
+                  props.updateFormDataField("nivelMentorar", e.target.value);
+                }}
+              />
+            </>
           ) : (
             <>
               <label>O que você quer aprender?</label>
@@ -116,7 +109,6 @@ export default function StepOne(props: Props) {
               />
             </>
           )}
-
 
           <label>Qual gênero você se identifica?</label>
           <SimpleInput
@@ -148,7 +140,6 @@ export default function StepOne(props: Props) {
             }
           />
 
-          
           <label>Conte um pouco mais sobre você:</label>
           <SimpleInput
             isTextArea={true}

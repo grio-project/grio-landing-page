@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { SimpleInputContainer } from "./style";
 
 type Props = {

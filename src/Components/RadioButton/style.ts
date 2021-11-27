@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const RadioButtonContainer = styled.div`
   width: 100%;
@@ -6,7 +6,5 @@ export const RadioButtonContainer = styled.div`
   margin: 24px;
   cursor: pointer;
   user-select: none;
-  display:flex;
-  
+  display: flex;
 `;
-
