@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StepTwoContenair = styled.div`
+export const StepTwoContainer = styled.div`
   width: 100%;
   height: 590px;  
   display: flex;
@@ -75,7 +75,7 @@ export const StepTags =  styled.div
     `
     display: flex;
     width: 50%;
-    height: auto;
+    justify-content: center;
     flex-wrap: wrap;
     padding:6px;
    

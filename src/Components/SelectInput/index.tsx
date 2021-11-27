@@ -4,15 +4,12 @@ import { SelectInputContainer } from './style'
 type Props = {
   placeholder: any,
   options: string[],
+  handleValue: any,
 }
 
 export default function SelectInput(props: Props) {
   const [value, setValue] = useState()  
   const selectedValue = null;
-
-  const handleValue = (e:any) => {
-    setValue(e.target.value)
-  }
 
   const items = []
 
@@ -21,10 +18,9 @@ export default function SelectInput(props: Props) {
   }
 
   return (
-
     <SelectInputContainer>
         <div className="form-group">
-            <select className="form-control" placeholder={props.placeholder} onChange={e=>handleValue(e)}>
+            <select className="form-control" placeholder={props.placeholder} onChange={props.handleValue} required>
               {items}
             </select>
         </div>

@@ -1,20 +1,43 @@
 import styled from 'styled-components';
 
 export const SimpleInputContainer = styled.div`
-     
-      
-      
       width: 100%;
-      height: 38px;
-      color: $gray_dark1;
-      margin: 0;
-  
-      &::placeholder {
-        font-size: 14px;
-        color: #a7b0be;
+
+      input{
+       &::placeholder {
+        font-size: 16px;
+        color: #C7C9C7;
+        font-weight: 400;
+        
+      }  
+        &:-webkit-autofill {
+          box-shadow: 0 0 0 30px white inset;
+        }
       }
-  
-      &:-webkit-autofill {
-        box-shadow: 0 0 0 30px white inset;
+
+      .text-area{
+        height: 100px;
+        border: 1px solid #D6D7DA;
+        border-radius: 4px;
+        padding: 8px;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        color: #666666;
+        font-weight: normal;
+      }
+
+      .simple-input {
+        height: 38px;
+        border: 1px solid #D6D7DA;
+        border-radius: 4px;
+        padding: 8px;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        color: #666666;
+        font-weight: normal;
       }
 `;
