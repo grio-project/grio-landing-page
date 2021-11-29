@@ -22,7 +22,7 @@ export default function Initial(props: Props) {
       <People />
       <h1> Você quer mentorar ou ser mentorade? </h1>
       <p>
-        {/* Griô é um espaço Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. */}
+        {/* Griô é um espaço Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.   */}
       </p>
       <div>
         <Buttons
